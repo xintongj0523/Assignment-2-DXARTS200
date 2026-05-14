@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Assignment #2</title>
+
+<style>
+
+body {
+    background: #f6f3ee;
+    font-family: Georgia, serif;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.poem {
+    position: relative;
+    width: 820px;
+    height: 760px;
+    margin: 30px auto;
+    border: 1px solid #b8b0a5;
+    border-radius: 28px;
+    background: #fbf8f1;
+    overflow: hidden;
+}
+
+
+.clear {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #2f2f2f;
+    line-height: 1.8;
+}
+
+
+.blur {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #3f3f3f;
+    transition: 0.6s ease;
+    line-height: 1.9;
+}
+
+
+.blur:hover {
+    filter: blur(0);
+    opacity: 1;
+}
+
+
+.level1 {
+    filter: blur(1px);
+    opacity: 0.82;
+}
+
+.level2 {
+    filter: blur(2.5px);
+    opacity: 0.65;
+}
+
+.level3 {
+    filter: blur(4px);
+    opacity: 0.48;
+}
+
+.level4 {
+    filter: blur(7px);
+    opacity: 0.28;
+}
+
+@keyframes shake {
+
+    0% {
+        transform: translate(0px, 0px) scale(1.03);
+    }
+
+    25% {
+        transform: translate(1px, -1px) scale(1.03);
+    }
+
+    50% {
+        transform: translate(-1px, 1px) scale(1.03);
+    }
+
+    75% {
+        transform: translate(1px, 1px) scale(1.03);
+    }
+
+    100% {
+        transform: translate(0px, 0px) scale(1.03);
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="poem">
+
+
+    <div class="clear" style="top:50px; font-size:26px;">
+        Spring nights deepen
+    </div>
+
+    <div class="clear" style="top:125px; font-size:22px;">
+        I wait for the person<br>
+        I will become
+    </div>
+
+    <div class="clear" style="top:225px; font-size:22px;">
+        Everything will be fine<br>
+        Everyone says so
+    </div>
+
+
+    <div class="blur level1" style="top:325px; font-size:20px;">
+        But... 
+    </div>
+
+
+    <div class="blur level2" style="top:395px; font-size:18px;">
+        Am I loved?<br>
+        Am I special?<br>
+        Am I worthy?
+    </div>
+
+
+    <div class="blur level3" style="top:540px; font-size:17px;">
+        What if I become no one?
+    </div>
+
+
+    <div class="blur level4" style="top:630px; font-size:15px;">
+        Maybe<br>
+        I will never know.
+    </div>
+
+</div>
+
+</body>
+</html>
